@@ -1,0 +1,21 @@
+*,
+*::before,
+*::after
+{
+  box-sizing: inherit;
+}
+
+html
+{
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body
+{
+  font-family: sans-serif;
+  width: 100vw;
+  min-height: 100vh;
+  color: #ffffff;
+  background-color: #000000;
+}

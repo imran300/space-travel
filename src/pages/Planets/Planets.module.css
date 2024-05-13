@@ -1,0 +1,100 @@
+/* Styling for the container of planets with spacecraft */
+.planetWithSpacecrafts {
+  display: flex;
+  margin-bottom: 2rem;
+  border: 2px solid #ffffff;
+  width: 60rem;
+}
+
+/* Styling for individual planet containers */
+.planet {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+  padding: 2rem;
+  border: 2px dotted #ffffff;
+  cursor: pointer;
+}
+
+/* Styling for selected planets */
+.planet--selected {
+  border-color: #ce3d3d; /* Red border for selected planets */
+}
+
+/* Hover effect for non-selected planets */
+.planet:not(.planet--selected):hover {
+  border-color: #6cd265; /* Green border on hover */
+}
+
+/* Styling for the planet image container */
+.planet__imageContainer {
+  flex-grow: 1;
+  width: 8rem;
+  height: 8rem;
+  margin-bottom: 2rem;
+}
+
+/* Styling for planet images */
+.planet__image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+/* Styling for planet information */
+.planet__info {
+  font-size: 1rem;
+}
+
+/* Styling for the container of spacecraft associated with a planet */
+.planet__spacecrafts {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Styling for individual spacecraft */
+.planet__spacecraft {
+  padding: 2rem;
+  margin-right: 2rem;
+}
+
+/* Styling for the spacecraft image container */
+.planet__spacecraft__imageContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  margin-bottom: 1rem;
+  cursor: grab;
+  border: 2px dotted #ffffff;
+}
+
+/* Styling for selected spacecraft */
+.planet__spacecraft--selected .planet__spacecraft__imageContainer {
+  border-color: #ce3d3d; /* Red border for selected spacecraft */
+}
+
+/* Hover effect for non-selected spacecraft */
+.planet__spacecraft:not(.planet__spacecraft--selected)
+  .planet__spacecraft__imageContainer:hover {
+  border-color: #6cd265; /* Green border on hover for non-selected spacecraft */
+}
+
+/* Styling for spacecraft images */
+.planet__spacecraft__image {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+/* Default styling for spacecraft images */
+.planet__spacecraft__image--default {
+  font-size: 2.4rem;
+}
+
+/* Styling for spacecraft information */
+.planet__spacecraft__info {
+  font-size: 1rem;
+}

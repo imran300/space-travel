@@ -1,0 +1,27 @@
+/* Section container */
+.section__container {
+  font-size: 1.2rem;
+}
+
+/* Add margin to all section containers except the last one */
+.section__container:not(:last-child) {
+  margin-bottom: 4rem;
+}
+
+/* Center-align h1 within section containers */
+.section__container h1 {
+  text-align: center;
+}
+
+/* Add margin below h2 within section containers */
+.section__container h2 {
+  margin-bottom: 1rem;
+}
+
+/* Style paragraphs within section containers */
+.section__container p {
+  padding: 2rem;
+  text-align: justify;
+  border: 2px dotted #ffffff;
+  width: 60rem;
+}

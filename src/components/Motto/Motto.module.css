@@ -1,0 +1,17 @@
+/* Styles for the Motto component */
+.motto {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+/* Styles for the text within the Motto component */
+.motto__text {
+  font-size: 1rem; /* Set the font size for the text */
+}
+
+/* Styles for the emojis within the Motto component */
+.motto__emojis {
+  font-size: 1.4rem; /* Set the font size for the emojis */
+}
